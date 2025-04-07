@@ -50,4 +50,13 @@ print (df['gender'])
 #ARREGLOs  
 #['x'] - x=nombre de la columna   
 ```
+# 
+**Fecha:**  07/04 
+
+---
+
+## 📌 Actividad 1 del Día  
+###  
+```python
+```
 
