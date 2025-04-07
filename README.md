@@ -68,4 +68,4 @@ print(df[['gender','math score']].tail(4))
 print(df[['gender','math score']].mean)
 print(df[['gender','math score']].dtypes)
 ```
-
+![TERMINAL](https://github.com/Marianete/ejercicios/blob/main/Captura.PNG)
