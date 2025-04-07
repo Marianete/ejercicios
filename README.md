@@ -69,3 +69,5 @@ print(df[['gender','math score']].mean)
 print(df[['gender','math score']].dtypes)
 ```
 ![TERMINAL](https://github.com/Marianete/ejercicios/blob/main/Captura.PNG)
+## 📌 Actividad 2 del Día 
+### Abrir el csv. Mostar las 3 ultimas columnas. Mostrar las 100 primeras filas. Mostrar la media, minimo, max y cantidad. Convertir al string.
