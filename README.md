@@ -56,7 +56,16 @@ print (df['gender'])
 ---
 
 ## 📌 Actividad 1 del Día  
+### Abrir el csv.  Mostrar las columnas gender y mathscore. Mostrar la cantidad dde filas y columnas que tiene.  Mostrar las primeras 4 filas. Mostrar las ultimas 4 lineas. Mostrar la media. Mostrar los tipos de datos de cada columna.
 ###  
 ```python
+import pandas as pd
+df = pd.read_csv('StudentsPerformance.csv')
+print(df[['gender','math score']])
+print(df[['gender','math score']].shape)
+print(df[['gender','math score']].head(4))
+print(df[['gender','math score']].tail(4))
+print(df[['gender','math score']].mean)
+print(df[['gender','math score']].dtypes)
 ```
 
