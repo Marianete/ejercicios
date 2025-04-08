@@ -35,6 +35,10 @@ print(df2)
 ## 📌 Actividad 2 del Día  
 ###
 ```python
+import pandas as pd     
+df = pd.read_csv('StudentsPerformance.csv')  
+print (df['gender'])  
+
 #ATRIBUTOS
 # .dtypes (tipo de datos de las columnas)
 # .shape (cantidad de filas y columnas)
