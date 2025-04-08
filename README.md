@@ -120,7 +120,19 @@ datos = [40,40,10,10]
 color = ['gold', 'lightcoral', 'lightskyblue', 'lightgreen']
 label = ['Gatos','Perros','Delfines','Pajaros']
 plt.pie(datos, labels= label, colors= color, autopct= '%1.1f%%', startangle= 140)
+plt.title('grafico de torta')
 plt.axis('equal')
+plt.show()
+```
+```python
+import matplotlib.pyplot as plt
+import pandas as pd 
+x = [1,2,3,4,5,6,7,8,9,10]
+y = [2,5,8,11,14,17,20,23,26,29]
+plt.scatter(x,y,color= 'blue', marker= 'o')
+plt.title('Grafico de dispercion')
+plt.xlabel('Hola')
+plt.ylabel('Hola')
 plt.show()
 ```
 
