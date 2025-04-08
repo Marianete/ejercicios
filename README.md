@@ -114,4 +114,13 @@ plt.title('Grafico de ejemplo')
 #mostrar
 plt.show()
 ```
+```python
+import matplotlib.pyplot as plt
+datos = [40,40,10,10]
+color = ['gold', 'lightcoral', 'lightskyblue', 'lightgreen']
+label = ['Gatos','Perros','Delfines','Pajaros']
+plt.pie(datos, labels= label, colors= color, autopct= '%1.1f%%', startangle= 140)
+plt.axis('equal')
+plt.show()
+```
 
