@@ -90,3 +90,28 @@ print(df[['reading score','math score', 'writing score']].count)
 print(df[['reading score','math score', 'writing score']].to_string())
 ```
 ![TERMINALL](https://github.com/Marianete/ejercicios/blob/main/Capturanaziii.PNG)
+
+# 
+**Fecha:**  08/04 
+
+---
+
+## 📌 Actividad 1 del Día  
+### Lo basico en 'matplotlib'
+```python
+#importar la libreria
+import matplotlib.pyplot as plt
+#datos
+x = [1,2,3,4,5] 
+y = [7,77,89,23,21]
+#crear graficos
+plt.plot(x,y)
+#etiquetas
+plt.xlabel('eje x')
+plt.ylabel('eje y')
+#titulear
+plt.title('Grafico de ejemplo')
+#mostrar
+plt.show()
+```
+
