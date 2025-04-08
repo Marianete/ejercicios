@@ -35,20 +35,23 @@ print(df2)
 ## 📌 Actividad 2 del Día  
 ###
 ```python
-import pandas as pd     
-df = pd.read_csv('StudentsPerformance.csv')  
-print (df['gender'])  
+#ATRIBUTOS
+# .dtypes (tipo de datos de las columnas)
+# .shape (cantidad de filas y columnas)
+# .mean (muestra la media)
+# .min (muestra el minimo)
+# .max (muestra el maximo)
+# .count (cantidad)
 
-#ATRIBUTOS  
-# .dtypes (tipo de datos de las columnas)  
-# .shape (cantidad de filas y columnas)  
-#FUNCIONES   
-# .head() - muestra las primeras 5 filas    
-# .tail() - muestra las ultimas 5 filas   
-# .describe() - muestra estadisticas de las columnas numericas   
-# .info() - muestra las filas vacias (Tipo de data de nada es: non-null)  
-#ARREGLOs  
-#['x'] - x=nombre de la columna   
+#FUNCIONES 
+# .head() - muestra las primeras 5 filas
+# .tail() - muestra las ultimas 5 filas 
+# .describe() - muestra estadisticas de las columnas numericas 
+# .info() - muestra las filas vacias (Tipo de data de nada es: non-null)
+# .to_(tipo de dato)() - lo convierte  
+# .iloc[:, -3] - mustra las ultimas tres columnas
+#ARREGLOs
+#['x'] - x=nombre de la columna 
 ```
 # 
 **Fecha:**  07/04 
