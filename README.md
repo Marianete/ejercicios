@@ -135,4 +135,54 @@ plt.xlabel('Hola')
 plt.ylabel('Hola')
 plt.show()
 ```
+# 
+**Fecha:**  14/04 
 
+---
+
+## 📌 Actividad 1 del Día  
+### 
+```python
+import pandas as pd 
+import numpy as np
+df = pd.read_csv('StudentsPerformance.csv')
+a = np.arange(0,1000)
+df ['Columna de Arreglo'] = a
+print(df)
+
+
+
+
+#df['Nueva Columna']=70
+
+```
+```python
+import pandas as pd 
+import numpy as np
+df = pd.read_csv('StudentsPerformance.csv')
+a = np.random.randint(1,100, size=1000)
+df ['Columna de Arreglo'] = a
+print(df)
+
+
+
+
+#df['Nueva Columna']=70
+
+
+```
+```python
+import pandas as pd 
+import numpy as np
+df = pd.read_csv('StudentsPerformance.csv')
+a = np.random.uniform(1,100, size=1000)
+df ['Columna de Arreglo'] = a
+print(df)
+
+
+
+
+#df['Nueva Columna']=70
+
+
+```
