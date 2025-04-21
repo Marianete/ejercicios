@@ -208,3 +208,20 @@ print(df ['math score']+ df['reading score']+ df['writing score'])
 #print(df ['math score'].min())
 #print(df.head())
 ```
+# 
+**Fecha:**  21/04 
+
+---
+
+## 📌 Actividad 1 del Día  
+### Filtros, sort_values, ascendent
+```python
+import pandas as pd
+df = pd.read_csv('StudentsPerformance.csv')
+print(df[df['gender'] == 'male'].count())
+
+
+print(df[df['parental level of education'] == 'high school'].sort_values(by='math score').head())
+
+```
+
