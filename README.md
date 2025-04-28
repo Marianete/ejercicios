@@ -224,4 +224,16 @@ print(df[df['gender'] == 'male'].count())
 print(df[df['parental level of education'] == 'high school'].sort_values(by='math score').head())
 
 ```
+# 
+**Fecha:**  28/04 
+
+---
+
+## 📌 Actividad 1 del Día  
+### Obtener a los 5 usuarios más viejos de Alemania
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+print(df[df['pais'] == 'Germany'].sort_values('edad', ascending=False).head(5))
+```
 
