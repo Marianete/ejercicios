@@ -236,4 +236,38 @@ import pandas as pd
 df = pd.read_csv('users.csv')
 print(df[df['pais'] == 'Germany'].sort_values('edad', ascending=False).head(5))
 ```
+## 📌 Actividad 2 del Día  
+###  Obtener todos los usuarios entre las edades de 40 y 50 años 
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+print(df['edad'].between(40, 50))
+```
+## 📌 Actividad 3 del Día  
+###  Obtener todos los usuarios mayores de 30 años de los países Canadá, Alemania y Francia
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+print(df[(df['pais'] == 'Canada') | (df['pais'] == 'Germany') | (df['pais'] == 'France') & (df['edad'] > 30)])
+```
+## 📌 Actividad 4 del Día  
+###  Obtener todos los usuarios mayores de 30 años de los países Canadá.
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+print(df[(df['pais'] == 'Canada') & (df['edad'] > 30)])
+```
+## 📌 Actividad 5 del Día  
+###  Mostrar en consola la cantidad de hombres y mujeres. tambien el nombre y cantidad del pais que mas mujeres tiene.
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+conteo_genero = df['genero'].value_counts()
+print(conteo_genero)
+mujeres = df[df['genero'] == 'female']
+mujeres_por_pais = mujeres['pais'].value_counts()
+pais_con_mas_mujeres = mujeres_por_pais.idxmax()
+print(pais_con_mas_mujeres, mujeres_por_pais.max())
+
+```
 
