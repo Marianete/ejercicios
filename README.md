@@ -270,4 +270,5 @@ pais_con_mas_mujeres = mujeres_por_pais.idxmax()
 print(pais_con_mas_mujeres, mujeres_por_pais.max())
 
 ```
+![TERMINAL](https://github.com/Marianete/ejercicios/blob/main/Captura.PNG)
 
