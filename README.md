@@ -291,3 +291,36 @@ print("Desviación estándar (ddof=1):", std)
 print("Varianza (ddof=1):", varianza)
 print("Mediana:", mediana)
 ```
+## 📌 Actividad 2 del Día
+### Obtener a los 5 usuarios mas jovenes de francia, obtener los 5 usuarios mas jovenes de australia
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+francia_jovenes = df[df['pais'] == 'France'].sort_values('edad').head(5)
+australia_jovenes = df[df['pais'] == 'Australia'].sort_values('edad').head(5)
+print("5 usuarios más jóvenes de Francia:")
+print(francia_jovenes)
+print("\n5 usuarios más jóvenes de Australia:")
+print(australia_jovenes)
+```
+## 📌 Actividad 3 del Día
+### oBTE NER LA CANTIDAD DE PERSONAS QUE HAY EN ESPAÑA Y CUANTOS SON MASCULINOS Y CUANTOS SON FEMENINOS, HACER UN GRAFICO CON matplotlib
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+import matplotlib.pyplot as plt
+
+espana = df[df['pais'] == 'Spain']
+total_espana = len(espana)
+masculinos = len(espana[espana['genero'] == 'male'])
+femeninos = len(espana[espana['genero'] == 'female'])
+
+print(f"Total en España: {total_espana}")
+print(f"Masculinos: {masculinos}")
+print(f"Femeninos: {femeninos}")
+
+plt.bar(['Masculinos', 'Femeninos'], [masculinos, femeninos], color=['blue', 'pink'])
+plt.title('Cantidad de personas en España por género')
+plt.ylabel('Cantidad')
+plt.show()
+```
