@@ -324,3 +324,59 @@ plt.title('Cantidad de personas en España por género')
 plt.ylabel('Cantidad')
 plt.show()
 ```
+# 
+**Fecha:**  13/05 
+
+---
+
+## 📌 Actividad 1 del Día
+### Obtener el nombre de todos los usuarios mayores a 50 años, dividir entre masculino y fememenino.
+```python
+import pandas as pd
+df = pd.read_csv('users.csv')
+mayores_50 = df[df['edad'] > 50]
+masculinos = mayores_50[mayores_50['genero'] == 'male']['nombre']
+femeninos = mayores_50[mayores_50['genero'] == 'female']['nombre']
+masculinos1 = len(masculinos)
+femeninos1 = len(femeninos)
+print("Total de personas mayores a 50 años:\n", masculinos1 + femeninos1 )
+print("Masculinos mayores de 50 años:\n", masculinos)
+print("Femeninos mayores de 50 años:\n", femeninos)
+import matplotlib.pyplot as plt
+
+labels = ['Masculinos', 'Femeninos']
+counts = [masculinos1, femeninos1]
+
+plt.bar(labels, counts, color=['blue', 'pink'])
+plt.title('Personas mayores de 50 años por género')
+plt.ylabel('Cantidad')
+plt.show()
+```
+## 📌 Actividad 2 del Día
+### Obtener a los 20 usuarios mas viejos ed reino unido, dividir en femenino y masculino
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Cargar datos
+df = pd.read_csv("users.csv")
+
+# Filtrar top 20 usuarios más viejos del Reino Unido
+top_20_uk = df[df["pais"] == "United Kingdom"].sort_values(by="edad", ascending=False).head(20)
+
+# Separar por género
+hombres = top_20_uk[top_20_uk["genero"] == "male"]
+mujeres = top_20_uk[top_20_uk["genero"] == "female"]
+print("Hombres:\n", hombres[["nombre", "edad"]])
+print("\nMujeres:\n", mujeres[["nombre", "edad"]])
+# Graficar edades por género
+plt.bar(hombres["nombre"], hombres["edad"], label="Hombres", color="blue")
+plt.bar(mujeres["nombre"], mujeres["edad"], label="Mujeres", color="pink")
+plt.xlabel("Nombre")
+plt.ylabel("Edad")
+plt.title("Top 20 usuarios más viejos del Reino Unido por género")
+plt.xticks(rotation=90)
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
